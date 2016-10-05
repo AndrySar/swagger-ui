@@ -1,14 +1,16 @@
 sudo: false
 language: node_js
 node_js:
-  - '4.2'
+- '4.2'
 install:
-  - export DISPLAY=:99.0
-  - sh -e /etc/init.d/xvfb start
-  - npm i -g jshint
-  - npm install
+- export DISPLAY=:99.0
+- sh -e /etc/init.d/xvfb start
+- npm i -g jshint
+- npm install
 deploy:
   provider: heroku
   api_key:
-    secure: ZfGBJTTHeP7UimWayAnc82bLUbjpsfK2Zw8vm9bNzdGLMA/HrBjnxpUMU4XXMGOihJLPJ7KFz2iEbiDZh/CjbEnpMgp63eFJKzHu9WCYvloqsl7m3UfyvcSJuYDAEeocB0JoGhih7920Ok0qY1g2qbhsQgJ6kZG1zA3zuBYV76JzTL0dnWlxH6hJgOnAEgoy9frXybKTfJzgb1Ct7dFfRjIZa19xOglYa3b5dh1YO5uVtcsPyNcnd3bFXPBEjmSZ5fG1eeZnTHxAWyIP2hPuYzgY1lR9jOKcvr+CzSKxLIe0hKZSAhIYjXLogQnu5stScj+PY/esklcLnWuY0IBwDli5CamUAgInQlfEVNRkadN6j+h+yCygT61yEBHC5qvs325k4+7D2V1afYdDKUIItLen80BTzD84VNvT7CZLnLXYWqdz89Rkr+eLQYsiQFDkXhxIHt2Pa/wzNqPUBcjGRnsQnL7/dQ9UefIV5q5R95BMMmz5RJRi085DzAqGLLtwKkIvhhslKn1B92b7qT6Xs8EZBQM+KjmW3jdFWZ7AzCX9NREMEXOF4AIfOrjad0Zto7L+OJcilAVyxKgLOiOfYvt2XZ/D4eKpuvvRtDXG79YcjTh4pw1xWJJHd23cxSixRg9JhNp9ykgOdRhlFCHMZKJPpAyk/VTryLK7EiB8OJk=
-  app:	monopoly-api
+    secure: vKN2n9o/0XQ7/OgvU8bHro4J6ejIF1QIvbCK20vqZEYYkQCor8/f76KUC853OzPrrmegCU7VTlYV4NsUDPA4xCrOUuaTtur519xwvM1FWQqqGakIYhba182Tirx1CAUozhV6xCyYTo1jDXWtsIGu7DmfWi2fAJfBHpKYgzlXu6mbR96lIVUYU1aGYELDYvmMcxF5gMOnoKvrpcBLVFVJOcHTdq8Q8v2nkLjnVzL4YfjH+5xeEh5cJdVaLINlHaGIuqarUdQPKw7zNO5A5dNkzJHIKMJKNvMZ1u4IsVUUhCT87ByV7O6uPhYfmKCWA6q0DpKTDAdepcGB1ADDDIjPiNfWgrF1XJTOw2R4UzEzb0ZXFPGGEhBfLPiDm5+E2o6G9fZS/BP40q3qt0dR5My4aTRh4+10ZjDKsrtJXOakwX4qHNSNnV2z8lMyFMIk4ec2ylxbSLDchCsh5FcmfcqCAoo28ZKCtgawSbplChB3lGdxbR8QxdgaNZ9XZ8L8j2ZKHwKaDxeVBly6TbsU5XeOv3Z1kaS0VG8TdegKPK2roqedbaoYNLb8PAvmyrmFsORdhrHxE/G51wEFDYva3iJegoI1+TEnomRMPkgu6ZPkQnf2PVoLPnPcsWRLLFQVTe/Djk6iVY69jSZy4zUfBW284T8gv5dVUEIHDXbu2/u79Ww=
+  app: monopoly-api
+  on:
+    repo: AndrySar/swagger-ui
